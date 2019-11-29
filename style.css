@@ -136,7 +136,7 @@ h2 {
   top: 15%;
   left: 15%;
   width: 70%;  
-  padding: 1em;
+  padding: 1.3em;
   z-index: 1;
   box-shadow: 0 0 15px 10px rgba(100, 100, 100, .8);
   line-height: 1.5;
@@ -148,7 +148,7 @@ button {
   position: absolute;
   top: 0;
   right: 0;  
-  font-weight: 700;
+  font-weight: 700;  
   padding: .2em;
 }
 
