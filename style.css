@@ -119,10 +119,19 @@ h2 {
   background-color: rgba(33, 34, 20, .8);
 }
 
+.fullscreen-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
 .description {
   background-color: #333;
-  color: #bbb;
-  display: none;
+  color: #bbb;  
   position: absolute;
   top: 15%;
   left: 15%;
