@@ -1,0 +1,152 @@
+/****General styles*****/
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.container, .overlay {
+  height: 100vh;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background: url("img/theodor-lundqvist-6Ox3fPG-qvo-unsplash.jpg") center/cover;
+}
+
+.italic {
+  font-style: italic;
+}
+/*Overlay styles */
+
+.overlay {
+  background-color: rgb(30, 30, 30);
+  color: #f8f8f8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+}
+
+h1 {
+  color:  rgb(137, 142, 0);
+  font-family: 'Sacramento', cursive;
+  font-size: 2.5rem;
+  margin-bottom: 1.5em;
+}
+
+.introduction {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin: 0 1em 1em;
+}
+
+.invitation {
+  color: #aaa;
+}
+
+/***Theories styles****/
+.container2 {
+  height: 70%;
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;  
+}
+
+.theory {
+  height: 50%;
+  width: 50%;
+  color: #fff; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: .9rem;
+  text-align: center;
+}
+
+#sociobiology h2, #existential-thomism h2 {
+  transform: rotate(-45deg);
+}
+
+#cartesian-dualism h2, #evolutionism h2 {
+  transform: rotate(45deg);
+}
+
+@media (min-width: 800px){
+  #cartesian-dualism h2, #evolutionism h2, #sociobiology h2, #existential-thomism h2 {
+    transform: rotate(0);
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+}
+
+#sociobiology, #evolutionism, #existential-thomism, #cartesian-dualism {
+  cursor: pointer;
+}
+
+#sociobiology {
+  background-color: rgba(125, 112, 92, .8);
+}
+
+#existential-thomism {
+  background-color: rgba(135, 143, 117, .8);
+}
+
+#evolutionism {
+  background-color: rgba(137, 142, 0, .8);
+}
+
+#cartesian-dualism {
+  background-color: rgba(33, 34, 20, .8);
+}
+
+.description {
+  background-color: #333;
+  color: #bbb;
+  display: none;
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  width: 70%;  
+  padding: 1em;
+  z-index: 1;
+  box-shadow: 0 0 15px 10px rgba(100, 100, 100, .8);
+  line-height: 1.5;
+  text-align: center;
+}
+
+button {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;  
+  font-weight: 700;
+  padding: .2em;
+}
+
+@media (min-width: 800px){
+  .description {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
