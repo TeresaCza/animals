@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-::selection {
+#sociobiology::selection {
   color: transparent;
   background-color: transparent;
 }
@@ -93,9 +93,6 @@ h2 {
 #cartesian-dualism h2, #evolutionism h2 {
   transform: rotate(45deg);
 }
-#cartesian-dualism, #evolutionism, #sociobiology, #existential-thomism {
--webkit-tap-highlight-color: transparent;
-}
 
 @media (min-width: 800px){
   #cartesian-dualism h2, #evolutionism h2, #sociobiology h2, #existential-thomism h2 {
@@ -109,6 +106,13 @@ h2 {
 
 #sociobiology, #evolutionism, #existential-thomism, #cartesian-dualism {
   cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 #sociobiology {
