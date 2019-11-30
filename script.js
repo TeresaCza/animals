@@ -8,6 +8,7 @@ const d1 = document.querySelector("#d1");
 const d2 = document.querySelector("#d2");
 const d3 = document.querySelector("#d3");
 const d4 = document.querySelector("#d4");
+const descriptions = [d1, d2, d3, d4];
 
 const b1 = document.querySelector("#b1");
 const b2 = document.querySelector("#b2");
@@ -18,7 +19,7 @@ setTimeout(function () {
   overlay.addEventListener("click", function () {
     overlay.style.display = "none";
   })
-}, 2000);
+}, 1000);
 
 function displayDescription(descNb) {
   return function () {
@@ -46,3 +47,14 @@ b1.addEventListener("click", hideDescription(d1));
 b2.addEventListener("click", hideDescription(d2));
 b3.addEventListener("click", hideDescription(d3));
 b4.addEventListener("click", hideDescription(d4));
+
+window.onclick = function (e) {
+  if (!e.target.matches(".description") && e.target.matches(".fullscreen-container")) {
+    for (let desc of descriptions) {
+      if (desc.style.display === "block") {
+        desc.style.display = "none";
+        container.style.filter = "blur(0)";
+      }
+    }
+  }
+}
