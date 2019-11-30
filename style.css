@@ -6,11 +6,6 @@
   box-sizing: border-box;
 }
 
-#sociobiology::selection {
-  color: transparent;
-  background-color: transparent;
-}
-
 body {
   font-family: 'Ubuntu Condensed', sans-serif;
 }
