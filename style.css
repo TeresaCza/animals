@@ -7,6 +7,7 @@
 }
 
 ::selection {
+  color: transparent;
   background-color: transparent;
 }
 
@@ -91,6 +92,9 @@ h2 {
 
 #cartesian-dualism h2, #evolutionism h2 {
   transform: rotate(45deg);
+}
+#cartesian-dualism, #evolutionism, #sociobiology, #existential-thomism {
+-webkit-tap-highlight-color: transparent;
 }
 
 @media (min-width: 800px){
