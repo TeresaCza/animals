@@ -20,7 +20,7 @@ body {
 }
 
 .container {
-  background: url("img/theodor-lundqvist-6Ox3fPG-qvo-unsplash.jpg") center/cover;
+  background: url("img/theodor-lundqvist-6Ox3fPG-qvo-unsplash.jpg") 20% center/cover;
 }
 
 .italic {
@@ -124,19 +124,21 @@ h2 {
   position: fixed;
   top: 0;
   left: 0;
-  bottom: 0;
   right: 0;
+  height: 100%;
+  overflow: auto;
   z-index: 1;
 }
 
 .description {
   background-color: #333;
+  border-radius: 3px;
   color: #bbb;  
   position: absolute;
   top: 15%;
-  left: 15%;
-  width: 70%;  
-  padding: 1.3em;
+  left: 15%;  
+  width: 70%;   
+  padding: 1.3em;  
   z-index: 1;
   box-shadow: 0 0 15px 10px rgba(100, 100, 100, .8);
   line-height: 1.5;
